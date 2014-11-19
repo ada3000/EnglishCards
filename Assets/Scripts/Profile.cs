@@ -1,24 +1,20 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Assets.Scripts.Common;
 using Assets.Scripts.Data;
-using Assets.Scripts.Enums;
-using Assets.Scripts.Environment;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
     public class Profile
     {
-        public ProtectedValue Credits;
-        public List<MemoShip> Ships;
-        public int SelectedShip;
-        public List<MemoShop> Shops;
-        public List<MemoAsteroid> Asteroids;
-        public ProtectedValue InitShopsTime;
-
         private static Profile _instance;
         private const string ProfileKey = "ST";
+
+        public List<int> ActiveCatigories { get; private set; }
+        public Dictionary<int, Word> Words { get; private set; }
+        public List<Category> Categories { get; private set; }
 
         public static Profile Instance
         {
@@ -59,52 +55,61 @@ namespace Assets.Scripts
                 Debug.Log("Create new profile");
                 _instance = new Profile
                 {
-                    Credits = 2000,
-                    InitShopsTime = DateTime.UtcNow.Encrypt(),
-                    Ships = new List<MemoShip>
+                    Words = new Dictionary<int,Word>(),
+                    Categories = new List<Category>(),
+                    ActiveCatigories = new List<int>()
+                };
+
+                _instance.Words.Add(0, new Word
                     {
-                        new MemoShip { Id = ShipId.Rhino },
-                        new MemoShip { Id = ShipId.Rhino }
-                    },
-                    Shops = new List<MemoShop>(),
-                    Asteroids = new List<MemoAsteroid>()
-                };
+                        Id = 0,
+                        TextEn = "to be/is/are",
+                        TextRu = "быть",
+                        ActionVerb = "being",
+                        Transcription = "[ be ]",
+                        Verb2 = "was/were",
+                        Verb3 = "been"
+                    });
 
-                _instance.Ships[0].Route = new List<RouteNode> { Env.Systems[Env.SystemNames.Andromeda]["Fobos"].ToRouteNode() };
-                _instance.Ships[0].Goods = new List<MemoGoods>
+                _instance.Words.Add(1, new Word
                 {
-                    new MemoGoods { Id = GoodsId.Water, Quantity = 10 },
-                    new MemoGoods { Id = GoodsId.Fish, Quantity = 5 }
-                };
-                _instance.Ships[0].Equipment = new List<MemoEquipment>
-                {
-                    new MemoEquipment { Id = EquipmentId.MassKit100, Quantity = 5 }
-                };
-                _instance.Ships[0].InstalledEquipment = new List<MemoInstalledEquipment>
-                {
-                    new MemoInstalledEquipment { Id = EquipmentId.JetEngine100, Index = 0 },
-                    new MemoInstalledEquipment { Id = EquipmentId.MassKit100, Index = 1 },
-                    //new MemoInstalledEquipment { Id = EquipmentId.ImpulseDrill100, Index = 2 }
-                    new MemoInstalledEquipment { Id = EquipmentId.LaserDrill100, Index = 2 }
-                };
+                    Id = 1,
+                    TextEn = "house",
+                    TextRu = "дом",
+                    Transcription = "[ house ]",
+                });
 
-                _instance.Ships[1].Route = new List<RouteNode> { Env.Systems[Env.SystemNames.Andromeda]["Ketania"].ToRouteNode() };
-                _instance.Ships[1].Goods = new List<MemoGoods>
+                _instance.Words.Add(2, new Word
                 {
-                    new MemoGoods { Id = GoodsId.Ferrum, Quantity = 10 },
-                };
-                _instance.Ships[1].Equipment = new List<MemoEquipment>();
-                _instance.Ships[1].InstalledEquipment = new List<MemoInstalledEquipment>
+                    Id = 2,
+                    TextEn = "car",
+                    TextRu = "машина",
+                    Transcription = "[ car ]",
+                });
+
+                _instance.Categories.Add(new Category
+                    {
+                        Id = 0,
+                        Name = "Test",
+                        Words = _instance.Words.Values.ToList()
+                    });
+
+                _instance.Categories.Add( new Category
                 {
-                    new MemoInstalledEquipment { Id = EquipmentId.JetEngine100, Index = 0 },
-                    new MemoInstalledEquipment { Id = EquipmentId.VolumeKit100, Index = 1 }
-                };
+                    Id = 1,
+                    Name = "Test 1",
+                    Words = _instance.Words.Values.ToList()
+                });
+
+                _instance.Categories.Add( new Category
+                {
+                    Id = 2,
+                    Name = "Test 2",
+                    Words = _instance.Words.Values.ToList()
+                });
+
+                _instance.ActiveCatigories = new List<int>() { 0 };
             }
-        }
-
-        public MemoShip Ship
-        {
-            get { return Ships[SelectedShip]; }
         }
 
         public void Save()

@@ -1,7 +1,5 @@
 ﻿using System;
 using Assets.Scripts.Common;
-using Assets.Scripts.Environment;
-using Assets.Scripts.Views;
 using UnityEngine;
 
 namespace Assets.Scripts.Engine
