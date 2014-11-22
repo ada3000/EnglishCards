@@ -15,7 +15,14 @@ namespace Assets.Scripts.Engine
 
         public void Awake() // Test asteroid
         {
+            var res = Resources.Load("Dictionaries/test", typeof(string));
+            Debug.Log(res);
             //Env.Initialize();
+
+            SimpleJSON.JSONClass node = new SimpleJSON.JSONClass();
+            node["id"] = "Тостер выпил пива";
+
+            Debug.Log(node.ToJsonString());
 
             ////SelectManager.SelectShip(0);
             //SelectManager.SelectSystem(Env.SystemNames.Andromeda);

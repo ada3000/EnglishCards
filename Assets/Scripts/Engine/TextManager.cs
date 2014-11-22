@@ -103,11 +103,6 @@ namespace Assets.Scripts.Engine
 
             _textEn.MainText.text = item.TextEn;
             _textEn.TranscriptionText.text = item.Transcription;
-
-            _textEn.Verb2Text.text = item.Verb2;
-            _textEn.Verb3Text.text = item.Verb3;
-
-            _textEn.ActionVerbText.text = item.ActionVerb;
         }
     }
 }

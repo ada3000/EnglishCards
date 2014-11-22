@@ -62,18 +62,13 @@ namespace Assets.Scripts
 
                 _instance.Words.Add(0, new Word
                     {
-                        Id = 0,
                         TextEn = "to be/is/are",
                         TextRu = "быть",
-                        ActionVerb = "being",
                         Transcription = "[ be ]",
-                        Verb2 = "was/were",
-                        Verb3 = "been"
                     });
 
                 _instance.Words.Add(1, new Word
                 {
-                    Id = 1,
                     TextEn = "house",
                     TextRu = "дом",
                     Transcription = "[ house ]",
@@ -81,7 +76,6 @@ namespace Assets.Scripts
 
                 _instance.Words.Add(2, new Word
                 {
-                    Id = 2,
                     TextEn = "car",
                     TextRu = "машина",
                     Transcription = "[ car ]",
@@ -122,6 +116,17 @@ namespace Assets.Scripts
 
             PlayerPrefs.SetString(ProfileKey, profile);
             PlayerPrefs.Save();
+        }
+
+        public DictionaryType[] AvaibleDictionaries
+        {
+            get
+            {
+                return new DictionaryType []
+                {
+                    new DictionaryType { FileName="Top170.dict", Desc = "Глаголы, топ 170"},
+                };
+            }
         }
     }
 }
