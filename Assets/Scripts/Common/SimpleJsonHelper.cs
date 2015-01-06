@@ -12,27 +12,42 @@ namespace Assets.Scripts.Common
 {
     public static class SimpleJsonHelper
     {
-        public static string GetString(this SimpleJSON.JSONNode node, string key, string defValue = null)
+        public static string GetString(this SimpleJSON.JSONNode node, string key, string defValue)
         {
             if (node == null || node[key] == null)
                 return defValue;
 
             return node[key].Value;
         }
-        public static int GetInt(this SimpleJSON.JSONNode node, string key, int defValue = 0)
+		public static string GetString(this SimpleJSON.JSONNode node, string key)
+		{
+			return node.GetString (key, null);
+		}
+        public static int GetInt(this SimpleJSON.JSONNode node, string key, int defValue)
         {
             if (node == null || node[key] == null)
                 return defValue;
 
             return node[key].AsInt;
         }
-        public static long GetLogn(this SimpleJSON.JSONNode node, string key, long defValue = 0)
+
+		public static int GetInt(this SimpleJSON.JSONNode node, string key)
+		{
+			return node.GetInt (key, 0);
+		}
+
+        public static long GetLong(this SimpleJSON.JSONNode node, string key, long defValue)
         {
             if (node == null || node[key] == null)
                 return defValue;
 
             return long.Parse(node[key].Value);
         }
+
+        public static long GetLong(this SimpleJSON.JSONNode node, string key)
+		{
+            return node.GetLong(key, 0);
+		}
 
         public static string ToJsonString(this IJsonSs obj)
         {

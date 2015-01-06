@@ -5,73 +5,9 @@ namespace Assets.Scripts
 {
 	public static class PrefabsHelper
 	{
-        public static GameObject InstantiateSystem(Transform parent)
+        public static GameObject InstantiateDictionaryNode(Transform parent)
         {
-            return Instantiate("System", parent);
-        }
-
-        public static GameObject InstantiateStar(Transform parent)
-	    {
-            return Instantiate("Star", parent);
-	    }
-
-        public static GameObject InstantiateGates(Transform parent)
-        {
-            return Instantiate("Gates", parent);
-        }
-
-        public static GameObject InstantiatePlanet(Transform parent)
-        {
-            return Instantiate("Planet", parent);
-        }
-
-        public static GameObject InstantiateStation(Transform parent)
-        {
-            return Instantiate("Station", parent);
-        }
-
-        public static GameObject InstantiateAsteroid(Transform parent)
-        {
-            return Instantiate("Asteroid", parent);
-        }
-        public static GameObject InstantiateAsteroidPart(Transform parent)
-        {
-            return Instantiate("AsteroidPart", parent);
-        }
-
-        public static GameObject InstantiateShip(Transform parent)
-        {
-            return Instantiate("Ship", parent);
-        }
-
-        public static GameObject InstantiateGoodsButton(Transform parent)
-        {
-            return Instantiate("GoodsButton", parent);
-        }
-
-        public static GameObject InstantiateInstalledEquipmentButton(Transform parent)
-        {
-            return Instantiate("InstalledEquipmentButton", parent);
-        }
-
-        public static GameObject InstantiateEquipmentButton(Transform parent)
-        {
-            return Instantiate("EquipmentButton", parent);
-        }
-
-        public static GameObject InstantiateEquipmentCellButton(Transform parent)
-        {
-            return Instantiate("EquipmentCellButton", parent);
-        }
-
-        public static GameObject InstantiateRouteFirefly(Transform parent)
-        {
-            return Instantiate("RouteFirefly", parent);
-        }
-
-        public static GameObject InstantiateShipSelector(Transform parent)
-        {
-            return Instantiate("ShipSelector", parent);
+            return Instantiate("DictionaryNode", parent);
         }
 
         private static GameObject Instantiate(string name, Transform parent)
