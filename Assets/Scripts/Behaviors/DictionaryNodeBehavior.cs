@@ -15,19 +15,24 @@ namespace Assets.Scripts.Behaviors
         public GameObject Node;
 
         public GameButton Button;
-        public GameButton RemoveButton;
+        public GameButton EditButton;
         public UILabel Label;
         public GameObject CheckedNode;
+
+        public bool AllowEdit = true;
+
+        public string DictionaryId { get; set; }
 
         public void Awake() // Test asteroid
         {
             Button.Up += Button_Up;
-            RemoveButton.Up += RemoveButton_Up;
+            EditButton.Up += EditButton_Up;
         }
 
-        void RemoveButton_Up()
+        void EditButton_Up()
         {
-            FindObjectOfType<DictionaryManager>().Remove(this);
+            Actions.Instance.EditDictionary(Profile.Instance.Dictionaries[DictionaryId]);
+            //FindObjectOfType<DictionaryManager>().Remove(this);
         }
 
         void Button_Up()
@@ -43,15 +48,19 @@ namespace Assets.Scripts.Behaviors
             }
             set
             {
+                if (!AllowEdit) return;
+
                 if (value)
                 {
                     var parent = Node.GetComponentInParent<UIPanel>();
                     foreach (var n in parent.GetComponentsInChildren<DictionaryNodeBehavior>())
                         n.Checked = false;
+
+                    Debug.Log("Activate dict node Name=" + Label.text);
                 }
 
                 CheckedNode.SetActive(value);
-                RemoveButton.gameObject.SetActive(value);
+                EditButton.gameObject.SetActive(value);
             }
         }
     }

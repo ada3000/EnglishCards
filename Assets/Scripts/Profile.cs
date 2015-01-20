@@ -14,6 +14,8 @@ namespace Assets.Scripts
 
         public List<int> ActiveCatigories { get; private set; }
         public Dictionary<int, Word> Words { get; private set; }
+
+        public Dictionary<string, WordDictionary> Dictionaries { get; private set; }
         public List<Category> Categories { get; private set; }
 
         public static Profile Instance
@@ -59,7 +61,7 @@ namespace Assets.Scripts
                     Categories = new List<Category>(),
                     ActiveCatigories = new List<int>()
                 };
-
+                
                 _instance.Words.Add(0, new Word
                     {
                         TextEn = "to be/is/are",
@@ -103,6 +105,11 @@ namespace Assets.Scripts
                 });
 
                 _instance.ActiveCatigories = new List<int>() { 0 };
+
+                _instance.Dictionaries = new Dictionary<string, WordDictionary>();
+                _instance.Dictionaries.Add("1", new WordDictionary { Name = "Dict 1" });
+                _instance.Dictionaries.Add("2", new WordDictionary { Name = "Dict 2" });
+                _instance.Dictionaries.Add("3", new WordDictionary { Name = "Dict 3" });
             }
         }
 
@@ -110,6 +117,9 @@ namespace Assets.Scripts
         {
             GameLog.Write("Saving profile...");
 
+            GameLog.Write("Saving profile disabled");
+            return;
+            
             var profile = Serializer.Serialize(this);
 
             GameLog.Write("Serialized profile: {0}", profile);

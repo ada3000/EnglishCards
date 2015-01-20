@@ -1,0 +1,245 @@
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7800 Series (ID=0x6818)
+    Vendor:   ATI
+    VRAM:     2006 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Git.ADA\EnglishCards\111_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Git.ADA\EnglishCards\111_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Git.ADA\EnglishCards\111_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading C:\Git.ADA\EnglishCards\111_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+- Completed reload, in  0.074 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\System.dll (this message is harmless)
+Create new profile
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+дом
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:GetComponent (System.Type)
+  at UnityEngine.Component.GetComponent[ViewManager] () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Platform assembly: C:\Git.ADA\EnglishCards\111_Data\Managed\System.Xml.dll (this message is harmless)
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NotSupportedException: The type System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Assets.Scripts.Data.Word, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] is not supported because it implements IDictionary.
+  at System.Xml.Serialization.TypeData.get_ListItemType () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData.get_ListItemTypeData () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive, System.Xml.Serialization.TypeData mappedType, System.Xml.Schema.XmlSchemaPatternFacet facet) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeData..ctor (System.Type type, System.String elementName, Boolean isPrimitive) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type runtimeType, System.String xmlDataType) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.TypeTranslator.GetTypeData (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.CreateMapMember (System.Type declaringType, System.Xml.Serialization.XmlReflectionMember rmember, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting field 'Words'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportClassMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+Rethrow as InvalidOperationException: There was an error reflecting type 'Assets.Scripts.Profile'.
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Xml.Serialization.TypeData typeData, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping (System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer..ctor (System.Type type) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Common.Serializer.Serialize (System.Object input) [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Profile.Save () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Engine.Engine.OnApplicationPause (Boolean paused) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
